@@ -4,14 +4,18 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>Tag: hexo | ailsa&#39;s blog</title>
+  <title>将django工程部署到heroku | ailsa&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="ailsa's blog">
-<meta property="og:url" content="http://yoursite.com/tags/hexo/index.html">
+  <meta name="description" content="想将django部署到heroku，研究了很久，依然云里雾里。直到找到官网的示例：https://devcenter.heroku.com/articles/getting-started-with-python对比着更改配置即可，不过仍然有几个坑比如，项目下不仅要建一个static目录，里面还要放一个空文件requirements.txt中还要加上psycopg2css文件中的注释内容还要去掉，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="将django工程部署到heroku">
+<meta property="og:url" content="http://yoursite.com/2016/07/09/django+heroku deploy/index.html">
 <meta property="og:site_name" content="ailsa's blog">
+<meta property="og:description" content="想将django部署到heroku，研究了很久，依然云里雾里。直到找到官网的示例：https://devcenter.heroku.com/articles/getting-started-with-python对比着更改配置即可，不过仍然有几个坑比如，项目下不仅要建一个static目录，里面还要放一个空文件requirements.txt中还要加上psycopg2css文件中的注释内容还要去掉，">
+<meta property="og:updated_time" content="2016-07-09T04:28:46.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ailsa's blog">
+<meta name="twitter:title" content="将django工程部署到heroku">
+<meta name="twitter:description" content="想将django部署到heroku，研究了很久，依然云里雾里。直到找到官网的示例：https://devcenter.heroku.com/articles/getting-started-with-python对比着更改配置即可，不过仍然有几个坑比如，项目下不仅要建一个static目录，里面还要放一个空文件requirements.txt中还要加上psycopg2css文件中的注释内容还要去掉，">
   
     <link rel="alternative" href="/atom.xml" title="ailsa&#39;s blog" type="application/atom+xml">
   
@@ -177,53 +181,109 @@
 	</div>
 </nav>
 
-      <div class="body-wrap">
+      <div class="body-wrap"><article id="post-django+heroku deploy" class="article article-type-post" itemscope itemprop="blogPost">
   
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2016" class="archive-year">2016</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/07/08/mac搭建hexo+github博客/" class="archive-article-date">
-  	<time datetime="2016-07-08T03:42:35.000Z" itemprop="datePublished">Jul 8</time>
+    <div class="article-meta">
+      <a href="/2016/07/09/django+heroku deploy/" class="article-date">
+  	<time datetime="2016-07-09T04:21:00.000Z" itemprop="datePublished">2016-07-09</time>
 </a>
-        </div>
-    	 
+    </div>
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/07/08/mac搭建hexo+github博客/">mac搭建hexo+github博客</a>
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      将django工程部署到heroku
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+      </header>
+      
+      <div class="article-info article-info-post">
+        
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/django/">django</a></li></ul>
 	</div>
 
-          
+        
 
-        </div>
         <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
+      </div>
+      
     
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>想将django部署到heroku，研究了很久，依然云里雾里。<br>直到找到官网的示例：<br><a href="https://devcenter.heroku.com/articles/getting-started-with-python" target="_blank" rel="external">https://devcenter.heroku.com/articles/getting-started-with-python</a><br>对比着更改配置即可，不过仍然有几个坑<br>比如，项目下不仅要建一个static目录，里面还要放一个空文件<br>requirements.txt中还要加上psycopg2<br>css文件中的注释内容还要去掉，因为heroku识别到了里面有错误<br>设置就绪之后，要进行的步骤都在这个链接里面<br><a href="https://devcenter.heroku.com/articles/deploying-python" target="_blank" rel="external">https://devcenter.heroku.com/articles/deploying-python</a><br>但是不要忘记 git init<br>ok，先记录这些</p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2016/07/08/mac搭建hexo+github博客/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">mac搭建hexo+github博客</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">Share to: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+    <a class="jiathis_button_twitter"></a>
+    <a class="jiathis_button_plus"></a> 
+    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="django+heroku deploy" data-title="将django工程部署到heroku" data-url="http://yoursite.com/2016/07/09/django+heroku deploy/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
 
 </div>
       <footer id="footer">
@@ -249,9 +309,9 @@
 		mathjax: true,
 		animate: true,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false
 	}

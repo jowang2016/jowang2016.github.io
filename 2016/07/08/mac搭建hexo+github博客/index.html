@@ -12,7 +12,7 @@
 <meta property="og:url" content="http://yoursite.com/2016/07/08/mac搭建hexo+github博客/index.html">
 <meta property="og:site_name" content="ailsa's blog">
 <meta property="og:description" content="安装node之后，通过npm安装hexo‘$ npm install -g hexo’创建hexo项目，例如你想创建的项目名称为’myblog’：‘hexo init myblog’创建成功之后，进入项目目录:‘cd myblog’通过’ls’命令可以查看目录的结构此时想要写文章，最好借助ide，我选择的是sublime在sublime中通过 project–add folder to proje">
-<meta property="og:updated_time" content="2016-07-08T04:19:38.000Z">
+<meta property="og:updated_time" content="2016-07-09T04:29:34.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="mac搭建hexo+github博客">
 <meta name="twitter:description" content="安装node之后，通过npm安装hexo‘$ npm install -g hexo’创建hexo项目，例如你想创建的项目名称为’myblog’：‘hexo init myblog’创建成功之后，进入项目目录:‘cd myblog’通过’ls’命令可以查看目录的结构此时想要写文章，最好借助ide，我选择的是sublime在sublime中通过 project–add folder to proje">
@@ -107,7 +107,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/hexo/" style="font-size: 10px;">hexo</a>
+						<a href="/tags/django/" style="font-size: 10px;">django</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a>
 					</div>
 				</section>
 				
@@ -218,7 +218,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>安装node之后，通过npm安装hexo<br>‘$ npm install -g hexo’<br>创建hexo项目，例如你想创建的项目名称为’myblog’：<br>‘hexo init myblog’<br>创建成功之后，进入项目目录:<br>‘cd myblog’<br>通过’ls’命令可以查看目录的结构<br>此时想要写文章，最好借助ide，我选择的是sublime<br>在sublime中通过 project–add folder to project 将myblog导入到sublime<br>点开myblog下面的source文件夹，可以看到_posts文件夹，所有的博客文章都在这个目录下面<br>现在你可以尝试编辑一篇文章<br>在将你的博客部署到github之前，你可能想看一下此时的博客效果，这个并不难，只要在终端，hexo项目目录下输入：<br>‘hexo server’<br>便可以通过打开<a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a> 查看博客效果<br>下面准备将博客发布到Github上，步骤如下：<br>依然在终端myblog目录下，输入：<br>‘vi _config.yml’<br>编辑这个文件的末尾处：<br>‘deploy:<br>  type: git<br>  repo: git@github.com:xxxx/xxxx.github.io.git<br>  branch: master’<br>xxxx为你的github账户名称<br>所以你需要在自己的github上创建名称为xxxx.github.io 的仓库<br>创建好之后，输入如下命令：<br>‘$ npm install hexo-deployer-git –save’<br>‘hexo generate’<br>‘hexo deploy’<br>ok！现在是见证奇迹的时刻了！<br>在浏览器中输入<a href="https://xxxx.github.io" target="_blank" rel="external">https://xxxx.github.io</a> （xxxx为你的github账户名称）<br>看看效果吧！</p>
+        <p>安装node之后，通过npm安装hexo<br>‘$ npm install -g hexo’<br>创建hexo项目，例如你想创建的项目名称为’myblog’：<br>‘hexo init myblog’<br>创建成功之后，进入项目目录:<br>‘cd myblog’<br>通过’ls’命令可以查看目录的结构<br>此时想要写文章，最好借助ide，我选择的是sublime<br>在sublime中通过 project–add folder to project 将myblog导入到sublime<br>点开myblog下面的source文件夹，可以看到_posts文件夹，所有的博客文章都在这个目录下面<br>现在你可以尝试编辑一篇文章<br>在将你的博客部署到github之前，你可能想看一下此时的博客效果，这个并不难，只要在终端，hexo项目目录下输入：<br>‘hexo server’<br>便可以通过打开<a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a> 查看博客效果<br>下面准备将博客发布到Github上，步骤如下：<br>依然在终端myblog目录下，输入：<br>‘vi _config.yml’<br>编辑这个文件的末尾处：<br>‘deploy:<br>  type: git<br>  repo: git@github.com:xxxx/xxxx.github.io.git<br>  branch: master’<br>xxxx为你的github账户名称<br>所以你需要在自己的github上创建名称为xxxx.github.io 的仓库<br>创建好之后，输入如下命令：<br>‘$ npm install hexo-deployer-git –save’<br>‘hexo generate’<br>‘hexo deploy’<br>ok！现在是见证奇迹的时刻了！<br>在浏览器中输入<a href="https://xxxx.github.io" target="_blank" rel="external">https://xxxx.github.io</a> （xxxx为你的github账户名称）<br>看看效果吧！<br>之后提交的命令：<br>hexo clean #清除缓存<br>hexo generate<br>hexo deploy</p>
 
       
     </div>
@@ -226,6 +226,20 @@
   </div>
   
     
+<nav id="article-nav">
+  
+    <a href="/2016/07/09/django+heroku deploy/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          将django工程部署到heroku
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
   
 </article>
 

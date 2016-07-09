@@ -103,7 +103,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/hexo/" style="font-size: 10px;">hexo</a>
+						<a href="/tags/django/" style="font-size: 10px;">django</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a>
 					</div>
 				</section>
 				
@@ -179,6 +179,63 @@
 
       <div class="body-wrap">
   
+    <article id="post-django+heroku deploy" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/07/09/django+heroku deploy/" class="article-date">
+  	<time datetime="2016-07-09T04:21:00.000Z" itemprop="datePublished">2016-07-09</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/07/09/django+heroku deploy/">将django工程部署到heroku</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>想将django部署到heroku，研究了很久，依然云里雾里。<br>直到找到官网的示例：<br><a href="https://devcenter.heroku.com/articles/getting-started-with-python" target="_blank" rel="external">https://devcenter.heroku.com/articles/getting-started-with-python</a><br>对比着更改配置即可，不过仍然有几个坑<br>比如，项目下不仅要建一个static目录，里面还要放一个空文件<br>requirements.txt中还要加上psycopg2<br>css文件中的注释内容还要去掉，因为heroku识别到了里面有错误<br>设置就绪之后，要进行的步骤都在这个链接里面<br><a href="https://devcenter.heroku.com/articles/deploying-python" target="_blank" rel="external">https://devcenter.heroku.com/articles/deploying-python</a><br>但是不要忘记 git init<br>ok，先记录这些</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/django/">django</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
     <article id="post-mac搭建hexo+github博客" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -205,7 +262,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>安装node之后，通过npm安装hexo<br>‘$ npm install -g hexo’<br>创建hexo项目，例如你想创建的项目名称为’myblog’：<br>‘hexo init myblog’<br>创建成功之后，进入项目目录:<br>‘cd myblog’<br>通过’ls’命令可以查看目录的结构<br>此时想要写文章，最好借助ide，我选择的是sublime<br>在sublime中通过 project–add folder to project 将myblog导入到sublime<br>点开myblog下面的source文件夹，可以看到_posts文件夹，所有的博客文章都在这个目录下面<br>现在你可以尝试编辑一篇文章<br>在将你的博客部署到github之前，你可能想看一下此时的博客效果，这个并不难，只要在终端，hexo项目目录下输入：<br>‘hexo server’<br>便可以通过打开<a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a> 查看博客效果<br>下面准备将博客发布到Github上，步骤如下：<br>依然在终端myblog目录下，输入：<br>‘vi _config.yml’<br>编辑这个文件的末尾处：<br>‘deploy:<br>  type: git<br>  repo: git@github.com:xxxx/xxxx.github.io.git<br>  branch: master’<br>xxxx为你的github账户名称<br>所以你需要在自己的github上创建名称为xxxx.github.io 的仓库<br>创建好之后，输入如下命令：<br>‘$ npm install hexo-deployer-git –save’<br>‘hexo generate’<br>‘hexo deploy’<br>ok！现在是见证奇迹的时刻了！<br>在浏览器中输入<a href="https://xxxx.github.io" target="_blank" rel="external">https://xxxx.github.io</a> （xxxx为你的github账户名称）<br>看看效果吧！</p>
+        <p>安装node之后，通过npm安装hexo<br>‘$ npm install -g hexo’<br>创建hexo项目，例如你想创建的项目名称为’myblog’：<br>‘hexo init myblog’<br>创建成功之后，进入项目目录:<br>‘cd myblog’<br>通过’ls’命令可以查看目录的结构<br>此时想要写文章，最好借助ide，我选择的是sublime<br>在sublime中通过 project–add folder to project 将myblog导入到sublime<br>点开myblog下面的source文件夹，可以看到_posts文件夹，所有的博客文章都在这个目录下面<br>现在你可以尝试编辑一篇文章<br>在将你的博客部署到github之前，你可能想看一下此时的博客效果，这个并不难，只要在终端，hexo项目目录下输入：<br>‘hexo server’<br>便可以通过打开<a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a> 查看博客效果<br>下面准备将博客发布到Github上，步骤如下：<br>依然在终端myblog目录下，输入：<br>‘vi _config.yml’<br>编辑这个文件的末尾处：<br>‘deploy:<br>  type: git<br>  repo: git@github.com:xxxx/xxxx.github.io.git<br>  branch: master’<br>xxxx为你的github账户名称<br>所以你需要在自己的github上创建名称为xxxx.github.io 的仓库<br>创建好之后，输入如下命令：<br>‘$ npm install hexo-deployer-git –save’<br>‘hexo generate’<br>‘hexo deploy’<br>ok！现在是见证奇迹的时刻了！<br>在浏览器中输入<a href="https://xxxx.github.io" target="_blank" rel="external">https://xxxx.github.io</a> （xxxx为你的github账户名称）<br>看看效果吧！<br>之后提交的命令：<br>hexo clean #清除缓存<br>hexo generate<br>hexo deploy</p>
 
       
     </div>
